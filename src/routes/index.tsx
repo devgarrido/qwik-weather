@@ -1,11 +1,22 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { AppWrapper } from "~/components/app-wrapper";
+import { CityInfo } from "~/components/city-info";
+import Navigation from "~/components/navigation";
+import { WeatherInfo } from "~/components/weather-info";
 
 export default component$(() => {
+  const city = useSignal("Cadiz");
+
   return (
-    <>
-      <h1>Hi 👋</h1>
-    </>
+    <AppWrapper>
+      <Navigation />
+      <h1>
+        The weather in <span>{city.value} </span>
+      </h1>
+      <WeatherInfo city={city} />
+      <CityInfo city={city} />
+    </AppWrapper>
   );
 });
 
