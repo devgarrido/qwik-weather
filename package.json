@@ -1,6 +1,10 @@
 {
-  "name": "my-qwik-empty-starter",
-  "description": "App with Routing built-in ready to create your app",
+  "name": "weather-application",
+  "description": "Aplicación para conocer el tiempo",
+  "author": {
+    "name": "Antonio Garrido",
+    "email": "vistapro.es@gmail.com"
+  },
   "engines": {
     "node": ">=15.0.0"
   },
