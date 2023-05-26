@@ -24,6 +24,8 @@ export const CityInfo = component$(({ city }: { city: Signal<string> }) => {
           <figure>
             <picture>
               <img
+                width="auto"
+                height="auto"
                 src={cityImageData.urls.raw}
                 alt={cityImageData.alt_description}
                 class="weather__city"
