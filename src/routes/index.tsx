@@ -6,7 +6,7 @@ import Navigation from "~/components/navigation";
 import { WeatherInfo } from "~/components/weather-info";
 
 export default component$(() => {
-  const city = useSignal("Cadiz");
+  const city = useSignal("Madrid");
 
   return (
     <AppWrapper>
